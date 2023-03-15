@@ -114,6 +114,7 @@ async function runQueryLoop() {
       const outputFile = path.join('C:', 'Users' ,`${user}`, 'Documents', `${QueryConditionArray[i]}` + ' ' + 'ExampleReport.xlsx');
       await workbook.xlsx.writeFile(outputFile);
   // End of For Loop
+  
    // Clear the worksheet
    for (let j = worksheet.rowCount; j >= 1; j--) {
     worksheet.spliceRows(j, 1);
