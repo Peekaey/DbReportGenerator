@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Report Generator</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 50px;
+		}
+		input[type=text], input[type=date] {
+			width: 300px;
+			height: 40px;
+			margin-bottom: 20px;
+			font-size: 18px;
+			padding: 5px;
+		}
+		input[type=submit] {
+			width: 150px;
+			height: 40px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		.p1 {
+			text-align:center
+		}
+	</style>
+</head>
+<body>
+	<nav>
+	<h1>Medication Reports Generator</h1>
+	<p class="p1"> Generating Reports For: <span id ="myData"> </span></p>
+	<form action="http://localhost:3000/submit" method="post">
+		<input type="text" name="stack" placeholder="Database name identifier">
+		<label for="start_date">Start Date:</label>
+		<input type="date" id="start_date" name="start_date">
+		<label for="end_date">End Date:</label>
+		<input type="date" id="end_date" name="end_date">
+		<label for="end_date">Firstname + Last Letter Of Lastname</label>
+		<input type="text" name="user" placeholder="FredT" value="FredT">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
