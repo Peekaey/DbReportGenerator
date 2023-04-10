@@ -1,5 +1,5 @@
 ### Report Generator
-Small Repo to compile and build an electron app with the purpose of querying and generating excel files from the results of the query. 
+Small Repo to compile and build an electron app with the purpose of querying and generating excel files from the results of the query from a database.   
 
 Framework existing, but certain elements such as output paths, or appropriate dbconfigs will need to be changed as needed for use case.
 
